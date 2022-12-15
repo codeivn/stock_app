@@ -8,17 +8,22 @@ import homeIcon from "../assets/home.png";
 
 export default function Dashboard() {
 
+    // Ziskanie udajov o pouzivatelovi
+    const userName = user_info.map(x => x.name);
+    const userPortfolioValue = user_info.map(x => x.portfolioValue);
+    const userPortfolioChange = user_info.map(x => x.portfolioChange);
+
   return (
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
         <View style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.textHeader}>WELCOME BACK</Text>
-                <Text style={styles.textName}>Ivan</Text>
+                <Text style={styles.textName}>{userName}</Text>
             </View>
             <View style={styles.sectionBody}>
                 <Text style={styles.textHeader}>Current Portfolio Value</Text>
-                <Text style={styles.numberValue}>$27</Text>
-                <Text style={styles.numberChange}>+0.77%</Text>
+                <Text style={styles.numberValue}>${userPortfolioValue}</Text>
+                <Text style={styles.numberChange}>{userPortfolioChange}%</Text>
             </View>
             <View style={styles.sectionAssets}>
             

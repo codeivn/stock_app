@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Ivan",
-        "portfolioValue": 27.777
+        "portfolioValue": 27.777,
+        "portfolioChange": 0.77
     }
 ]
