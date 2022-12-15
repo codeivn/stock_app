@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Pinterest",
+        "ticker": "PINS",
+        "price": 27.30,
+        "change": 1.09
+    },
+    {
+        "id": 2,
+        "name": "Netflix",
+        "ticker": "NFLX",
+        "price": 305.25,
+        "change": -2.25
+    }
+]
